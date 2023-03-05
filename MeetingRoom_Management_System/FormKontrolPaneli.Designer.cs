@@ -50,10 +50,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.userControlReservation1 = new MeetingRoom_Management_System.User_Control.UserControlReservation();
             this.userControlRoom1 = new MeetingRoom_Management_System.User_Control.UserControlRoom();
             this.userControlClient1 = new MeetingRoom_Management_System.User_Control.UserControlClient();
             this.userControlSetting1 = new MeetingRoom_Management_System.User_Control.UserControlSetting();
-            this.userControlReservation1 = new MeetingRoom_Management_System.User_Control.UserControlReservation();
+            this.userControlDashboard1 = new MeetingRoom_Management_System.User_Control.UserControlDashboard();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -297,6 +298,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.userControlDashboard1);
             this.panel6.Controls.Add(this.userControlReservation1);
             this.panel6.Controls.Add(this.userControlRoom1);
             this.panel6.Controls.Add(this.userControlClient1);
@@ -311,6 +313,18 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // userControlReservation1
+            // 
+            this.userControlReservation1.BackColor = System.Drawing.Color.White;
+            this.userControlReservation1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlReservation1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.userControlReservation1.Location = new System.Drawing.Point(0, 0);
+            this.userControlReservation1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlReservation1.Name = "userControlReservation1";
+            this.userControlReservation1.Size = new System.Drawing.Size(1540, 365);
+            this.userControlReservation1.TabIndex = 0;
+            this.userControlReservation1.Visible = false;
             // 
             // userControlRoom1
             // 
@@ -349,17 +363,15 @@
             this.userControlSetting1.Visible = false;
             this.userControlSetting1.Load += new System.EventHandler(this.userControlSetting1_Load);
             // 
-            // userControlReservation1
+            // userControlDashboard1
             // 
-            this.userControlReservation1.BackColor = System.Drawing.Color.White;
-            this.userControlReservation1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlReservation1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.userControlReservation1.Location = new System.Drawing.Point(0, 0);
-            this.userControlReservation1.Margin = new System.Windows.Forms.Padding(4);
-            this.userControlReservation1.Name = "userControlReservation1";
-            this.userControlReservation1.Size = new System.Drawing.Size(1540, 365);
-            this.userControlReservation1.TabIndex = 0;
-            this.userControlReservation1.Visible = false;
+            this.userControlDashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlDashboard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.userControlDashboard1.Location = new System.Drawing.Point(0, 0);
+            this.userControlDashboard1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.userControlDashboard1.Name = "userControlDashboard1";
+            this.userControlDashboard1.Size = new System.Drawing.Size(1540, 365);
+            this.userControlDashboard1.TabIndex = 0;
             // 
             // FormKontrolPaneli
             // 
@@ -422,5 +434,6 @@
         private User_Control.UserControlClient userControlClient1;
         private User_Control.UserControlRoom userControlRoom1;
         private User_Control.UserControlReservation userControlReservation1;
+        private User_Control.UserControlDashboard userControlDashboard1;
     }
 }

@@ -63,6 +63,12 @@ namespace MeetingRoom_Management_System
             userControlClient1.Hide();
             userControlRoom1.Hide();
             userControlReservation1.Hide();
+            userControlDashboard1.User();
+            userControlDashboard1.Room();
+            userControlDashboard1.Client();
+            userControlDashboard1.Show();
+
+
         }
 
         private void buttonClient_Click(object sender, EventArgs e)
@@ -73,7 +79,7 @@ namespace MeetingRoom_Management_System
             userControlClient1.Show();
             userControlRoom1.Hide();
             userControlReservation1.Hide();
-
+            userControlDashboard1.Hide();
 
 
         }
@@ -86,7 +92,7 @@ namespace MeetingRoom_Management_System
             userControlRoom1.Clear();
             userControlRoom1.Show();
             userControlReservation1.Hide();
-
+            userControlDashboard1.Hide();
         }
 
         private void buttonReservation_Click(object sender, EventArgs e)
@@ -97,6 +103,7 @@ namespace MeetingRoom_Management_System
             userControlRoom1.Hide();
             userControlReservation1.Clear();
             userControlReservation1.Show();
+            userControlDashboard1.Hide();
 
 
         }
@@ -109,6 +116,7 @@ namespace MeetingRoom_Management_System
             userControlClient1.Hide();
             userControlRoom1.Hide();
             userControlReservation1.Hide();
+            userControlDashboard1.Hide();
 
         }
 
